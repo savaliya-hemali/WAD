@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Practical 3: CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h2 {
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #222;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        /* Practical 4: Flexbox */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            flex: 1 1 250px;
+        }
+
+        h2,
+        h3 {
+            color: navy;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: lightblue;
+        }
+
+        input,
+        textarea {
+            width: 95%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: auto;
+            background: navy;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Practical 4: Media Query */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            section {
+                box-sizing: border-box;
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><u>My Personal Portfolio</u></h1>
+        <h2>Hemali Savaliya</h2>
+        <p>IT Engineering Student</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <div class="container">
+
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am an IT engineering student.</p>
+                <p>I am interested in <b>Web Development</b>
+                    and <i>Artificial Intelligence</i>.</p>
+            </section>
+
+            <section id="skills">
+                <h2>My Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>My Education</h2>
+                <p>Bachelor of Engineering in Information Technology</p>
+
+                <table>
+                    <tr>
+                        <th>Course</th>
+                        <th>College</th>
+                    </tr>
+                    <tr>
+                        <td>BE IT</td>
+                        <td>SSASIT</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>My Multimedia</h2>
+                <img src="photo.jpg" alt="Profile Photo" width="150">
+
+                <h3>My Video</h3>
+                <video controls width="250">
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Email: hemali@example.com</p>
+
+                <form>
+                    <label>Name:</label>
+                    <input type="text" placeholder="Enter your name" required>
+
+                    <label>Email:</label>
+                    <input type="email" placeholder="Enter your email" required>
+
+                    <label>Message:</label>
+                    <textarea rows="4" placeholder="Enter your message"></textarea>
+
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2026 Hemali Savaliya</p>
+    </footer>
+
+</body>
+
+</html>

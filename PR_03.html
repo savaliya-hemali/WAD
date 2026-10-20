@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+
+    <!-- Practical 3: CSS3 Styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        h2,
+        h3 {
+            color: navy;
+        }
+
+        header h2 {
+            color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        input,
+        textarea {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: navy;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <center>
+            <h1><u>My Personal Portfolio</u></h1>
+            <h2>Hemali Savaliya</h2>
+            <p>IT Engineering Student</p>
+        </center>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an IT engineering student.</p>
+            <p>I am interested in <b>Web Development</b>
+                and <i>Artificial Intelligence</i>.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h3>My Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h3>My Education</h3>
+            <p>Bachelor of Engineering in Information Technology</p>
+
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>College</th>
+                </tr>
+                <tr>
+                    <td>BE Information Technology</td>
+                    <td>SSASIT</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>My Photo</h3>
+            <img src="photo.jpg" alt="Profile Photo" width="150" height="150">
+
+            <h3>My Video</h3>
+            <video width="250" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+
+        <section id="contact">
+            <h3>Contact Me</h3>
+            <p>Email: hemali@example.com</p>
+
+            <form>
+                <label>Name:</label><br>
+                <input type="text" placeholder="Enter your name" required>
+                <br><br>
+
+                <label>Email:</label><br>
+                <input type="email" placeholder="Enter your email" required>
+                <br><br>
+
+                <label>Message:</label><br>
+                <textarea rows="4" cols="30" placeholder="Enter your message"></textarea>
+                <br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright © 2026 Hemali Savaliya</p>
+    </footer>
+
+</body>
+
+</html>
